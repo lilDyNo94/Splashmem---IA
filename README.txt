@@ -1,3 +1,5 @@
+Dylan Deshauteurs et Samba Niang
+
 # Splashmem IA - Moteur de Jeu en C
 
 Bienvenue dans mon projet Splashmem IA. Il s'agit d'un moteur de jeu d'arene en tour par tour developpe en C, ou jusqu'a 4 programmes (Intelligences Artificielles) s'affrontent sur une grille pour conquerir le plus grand territoire possible.
