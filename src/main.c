@@ -491,8 +491,9 @@ int play_round(Game *game)
             if (target_id > 0)
             {
                 Player *target = &game->players[target_id - 1];
-                // Annuler tout effet précédent et appliquer MUTE
+                // Annuler tous les effets précédents et appliquer MUTE
                 target->swap_turns = 0;
+                target->fork_turns = 0;
                 target->mute_turns = 10;
                 target->mute_caster_id = p->id;
             }
@@ -503,8 +504,9 @@ int play_round(Game *game)
             if (target_id > 0)
             {
                 Player *target = &game->players[target_id - 1];
-                // Annuler MUTE et appliquer SWAP
+                // Annuler tous les effets précédents et appliquer SWAP
                 target->mute_turns = 0;
+                target->fork_turns = 0;
                 target->swap_turns = 5;
                 target->swap_caster_id = p->id;
             }
