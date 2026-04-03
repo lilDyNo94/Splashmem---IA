@@ -3,6 +3,6 @@
 
 char get_action()
 {
-    int choix = (rand() % 4) + 1;
+    int choix = rand() % 18;
     return (char)choix;
 }
